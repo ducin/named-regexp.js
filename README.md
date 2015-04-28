@@ -1,7 +1,7 @@
 named-regexp.js
-=================
+===============
 
-https://github.com/cho45/named-regexp.js
+[![Build Status](https://travis-ci.org/tkoomzaaskz/named-regexp.js.svg)](https://travis-ci.org/tkoomzaaskz/named-regexp.js)
 
 Append named-capture feature to JavaScript RegExp
 
@@ -15,13 +15,11 @@ SYNOPSYS
     console.log(matched.captures); //=> { foo: [ 'aaa', 'bbb' ], bar: [ 'ccc' ] }
     console.log(matched.capture('foo')); //=> 'bbb' // last matched
 
-
     var replaced = re.replace('aaa bbb ccc ddd eee fff ggg', function (matched) {
         return matched.capture('bar');
     });
 
     console.log(replaced); //=> 'ccc fff ggg');
-
 
 DESCRIPTION
 ===========
@@ -53,7 +51,6 @@ Returns last matched string of the name.
 ### Method re.replace(string, replace)
 
 Same as `String.prototype.replace` but when `replace` is function, this method passes an Array object like value returning from `exec()`.
-
 
 LICENSE
 =======

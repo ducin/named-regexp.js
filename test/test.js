@@ -17,4 +17,3 @@ var replaced = re.replace('aaa bbb ccc ddd eee fff ggg', function (matched) {
 });
 
 assert.strictEqual(replaced, 'ccc fff ggg');
-
